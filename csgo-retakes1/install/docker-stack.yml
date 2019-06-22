@@ -1,0 +1,27 @@
+version: '3.2'
+services:
+  game:
+    image: joshhsoj1902/linuxgsm-docker:local
+    ports:
+      - target: 27015
+        published: 27015
+        protocol: tcp
+      - target: 27015
+        published: 27015
+        protocol: udp
+      - target: 27020
+        published: 27020
+        protocol: udp
+      - target: 27005
+        published: 27005
+        protocol: udp
+    deploy:
+      mode: replicated
+      replicas: 1
+    environment:
+      # - LGSM_GAMESERVERNAME=mumbleserver
+      - LGSM_IP=0.0.0.0
+      - LGSM_GAMESERVERNAME=cssserver
+      - LGSM_UPDATEINSTALLSKIP=UPDATE
+
+

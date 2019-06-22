@@ -1,0 +1,34 @@
+// Advertisements 2.0
+// by Tsunami
+//
+// Types
+// -----
+// center: Center message
+// chat: Chat message
+// hint: Hint message
+// menu: Menu message
+// top: Top message
+//
+// Flags (optional)
+// -----
+// Accepts flags of admins that will not see the advertisement.
+// When omitted everyone will see the advertisement.
+// When left empty only admins will see the advertisement.
+
+"Advertisements"
+{
+    "1"
+    {
+        "center"		"commands: !guns  !rtv  !nextmap"
+        "chat"			"{green}commands: !guns  !rtv  !nextmap"
+    }
+    "2"
+    {
+	"chat" 			"To switch weapons type {green}!guns"
+    }
+
+    "2"
+    {
+        "chat"			"Next map is {sm_nextmap}. Use !rtv to vote for instant map switch"
+    }
+}

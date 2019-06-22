@@ -1,0 +1,26 @@
+{
+	"port": 27000,
+	"server": [
+                {
+		            "host": "172.24.0.2",
+		            "port": 27015,
+		            "rconpass": "abjetzt"
+	            }
+    	    ],
+	"admins": ["STEAM_0:1:11885417","STEAM_0:120015691","STEAM_0:136763160","STEAM_1:1:5280126","STEAM_0:0:9599144","STEAM_0:1:26699350","STEAM_0:0:121818784","STEAM_0:1:70232956","STEAM_0:0:10941950","STEAM_0:0:44282432","STEAM_0:0:58092356"],
+	"default_rcon": "abjetzt",
+	"telegram_token": "",
+	"telegram_group": "",
+	"config_warmup": "cfg/warmup.cfg",
+	"config_knife": "cfg/knife.cfg",
+	"config_match": "cfg/match.cfg",
+	"config_overtime": "cfg/overtime.cfg",
+	"config_fullmap": "cfg/fullmap.cfg",
+	"recorddemo": true,
+	"knifedefault": false,
+	"otdefault": true,
+	"fullmapdefault": false, 
+	"pause_time": 0,
+	"ready_time": 0,
+	"serverType": "local"
+}

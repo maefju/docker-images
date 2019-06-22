@@ -1,0 +1,27 @@
+version: '3.1' 
+services:
+  csgo-retakes1:
+    image: csgo-retakes1:v1
+    environment:
+      - LGSM_GAMESERVERNAME=csgoserver
+      - LGSM_IP=88.99.165.146
+      - LGSM_UPDATEINSTALLSKIP=UPDATE
+      - LGSM_PORT=27065
+      - LGSM_DEFAULTMAP=de_overpass
+      - LGSM_GAMETYPE=0
+      - LGSM_GAMEMODE=1
+      - LGSM_MAPGROUP=mg_active
+      - LGSM_TICKRATE=128
+      - LGSM_MAXPLAYERS=12
+      - LGSM_GSLT=4FF70A3403B1F20DEEC2F3F04BAFC974
+    volumes:
+      - "/home/container/csgo-retakes1/data/logs:/home/steam/linuxgsm/logs"
+      - "/home/container/csgo-retakes1/data/serverfiles:/home/steam/linuxgsm/serverfiles/"
+    ports:
+      - "27055:27055/tcp"
+      - "27065:27065/tcp"
+      - "27066:27066/tcp"
+      - "27055:27055/udp"
+      - "27065:27065/udp"
+      - "27066:27016/udp"
+
