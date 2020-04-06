@@ -4,7 +4,7 @@ services:
     image: csgo-practice:v1
     environment:
       - LGSM_GAMESERVERNAME=csgoserver
-      - LGSM_IP=88.99.165.146
+      - LGSM_IP=00.00.000.000
       - LGSM_UPDATEINSTALLSKIP=UPDATE
       - LGSM_PORT=27085
       - LGSM_DEFAULTMAP=de_overpass
@@ -13,7 +13,7 @@ services:
       - LGSM_MAPGROUP=mg_active
       - LGSM_TICKRATE=128
       - LGSM_MAXPLAYERS=12
-      - LGSM_GSLT=DCE68C7FB9D575A88320D53C159710D0
+      - LGSM_GSLT=<GSLT TOKEN>
     volumes:
       - "/home/container/csgo-practice1/data/logs:/home/steam/linuxgsm/logs"
       - "/home/container/csgo-practice1/data/serverfiles:/home/steam/linuxgsm/serverfiles/"
