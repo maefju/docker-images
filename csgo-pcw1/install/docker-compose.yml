@@ -4,7 +4,7 @@ services:
     image: csgo-pcw1:v2
     environment:
       - LGSM_GAMESERVERNAME=csgoserver
-      - LGSM_IP=88.99.165.146
+      - LGSM_IP=00.00.00.000
       - LGSM_UPDATEINSTALLSKIP=UPDATE
       - LGSM_PORT=27015
       - LGSM_DEFAULTMAP=de_overpass
@@ -13,7 +13,7 @@ services:
       - LGSM_MAPGROUP=mg_active
       - LGSM_TICKRATE=128
       - LGSM_MAXPLAYERS=12
-      - LGSM_GSLT=59AB93F09BDDCB156D7C68C3671A0E46
+      - LGSM_GSLT=<GSLTTOKEN>
     volumes:
       - "/home/container/csgo-pcw1/data/logs:/home/steam/linuxgsm/logs"
       - "/home/container/csgo-pcw1/data/serverfiles:/home/steam/linuxgsm/serverfiles/"
